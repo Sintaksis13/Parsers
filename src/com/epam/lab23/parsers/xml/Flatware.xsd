@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.myxsd.com/flatwares"
+    xmlns:flat="http://www.myxsd.com/flatwares">
+    <element name="flatwares">
+        <complexType>
+            <sequence>
+                <element name="flatware" type="flat:Flatware" minOccurs="1" maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="Flatware">
+        <sequence>
+            <element name="visual" type="flat:Visual" />
+        </sequence>
+        <attribute name="type" use="required">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="fork" />
+                    <enumeration value="spoon" />
+                    <enumeration value="knife" />
+                </restriction>
+            </simpleType>
+        </attribute>
+        <attribute name="origin" use="required">
+        <simpleType>
+            <restriction base="string" />
+        </simpleType>
+        </attribute>
+        <attribute name="value" use="required">
+            <simpleType>
+                <restriction base="boolean" />
+            </simpleType>
+        </attribute>
+
+    </complexType>
+    <complexType name="Visual">
+        <all>
+            <element name="bladeLength" type="integer" default="0" />
+            <element name="bladeWidth" type="integer" default="0" />
+            <element name="toothLength" type="integer" default="0" />
+            <element name="material" type="flat:Material" default="iron" />
+            <element name="gripMaterial" type="flat:Material" default="wood" />
+            <element name="woodType" type="flat:TypeOfWood" default="none" />
+            <element name="volume" type="integer" default="0" />
+        </all>
+    </complexType>
+
+    <simpleType name="Material">
+        <restriction base="string">
+            <enumeration value="iron" />
+            <enumeration value="steel" />
+            <enumeration value="copper" />
+            <enumeration value="crudeiron" />
+            <enumeration value="wood" />
+            <enumeration value="metal" />
+        </restriction>
+    </simpleType>
+
+    <simpleType name="TypeOfWood">
+        <restriction base="string">
+            <enumeration value="oak" />
+            <enumeration value="birch" />
+            <enumeration value="maple" />
+            <enumeration value="poplar" />
+            <enumeration value="none" />
+        </restriction>
+    </simpleType>
+</schema>

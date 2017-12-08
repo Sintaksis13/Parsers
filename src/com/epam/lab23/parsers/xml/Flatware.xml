@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flat:flatwares xmlns:flat="http://www.myxsd.com/flatwares"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.myxsd.com/flatwares Flatware.xsd">
+    <flatware type="fork" origin="Russia" value="false">
+        <visual>
+            <bladeLength></bladeLength>
+            <bladeWidth></bladeWidth>
+            <toothLength>5</toothLength>
+            <material>iron</material>
+            <gripMaterial>wood</gripMaterial>
+            <woodType>maple</woodType>
+            <volume></volume>
+        </visual>
+    </flatware>
+    <flatware type="spoon" origin="USA" value="true">
+        <visual>
+            <bladeLength></bladeLength>
+            <bladeWidth></bladeWidth>
+            <toothLength></toothLength>
+            <material>crudeiron</material>
+            <gripMaterial>metal</gripMaterial>
+            <woodType></woodType>
+            <volume>30</volume>
+        </visual>
+    </flatware>
+    <flatware type="knife" origin="China" value="false">
+        <visual>
+            <bladeLength>15</bladeLength>
+            <bladeWidth>3</bladeWidth>
+            <toothLength></toothLength>
+            <material>copper</material>
+            <gripMaterial>wood</gripMaterial>
+            <woodType>oak</woodType>
+            <volume></volume>
+        </visual>
+    </flatware>
+    <flatware type="fork" origin="India" value="false">
+        <visual>
+            <bladeLength></bladeLength>
+            <bladeWidth></bladeWidth>
+            <toothLength>500</toothLength>
+            <material>steel</material>
+            <gripMaterial>wood</gripMaterial>
+            <woodType>poplar</woodType>
+            <volume></volume>
+        </visual>
+    </flatware>
+</flat:flatwares>
